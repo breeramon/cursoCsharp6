@@ -11,36 +11,15 @@ namespace Secao6
     {
         static void Main(string[] args)
         {
-            Estudante[] vect = new Estudante[10];
+            int s1 = Calculator.Soma(2, 3);
+            int s2 = Calculator.Soma(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+            int s3 = Calculator.Soma(20, 30, 40);
+            int s4 = Calculator.Soma(20, 30, 45, 55);
 
-            Console.Write("Quantos quartos serão alugados? : ");
-            int n = int.Parse(Console.ReadLine());
-
-            for (int i = 1; i <= n; i++)
-            {
-                Console.WriteLine();
-                Console.WriteLine("Aluguel #{0}:", i);
-                
-                Console.Write("Nome: ");
-                string nome = Console.ReadLine();
-
-                Console.Write("Email: ");
-                string email = Console.ReadLine();
-
-                Console.Write("Quarto: ");
-                int quarto = int.Parse(Console.ReadLine());
-                vect[quarto] = new Estudante(nome, email);
-            }
-
-            Console.WriteLine("");
-            Console.WriteLine("Quartos ocupados: ");
-            for (int i = 0; i < 10; i++)
-            {
-                if (vect[i] != null)
-                {
-                    Console.WriteLine("{0} : {1}", i, vect[i]);
-                }
-            }
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+            Console.WriteLine(s3);
+            Console.WriteLine(s4);
 
             Console.ReadKey();
         }
