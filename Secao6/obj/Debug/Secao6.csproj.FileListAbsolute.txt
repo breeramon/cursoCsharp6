@@ -1,0 +1,6 @@
+c:\users\brssantos\documents\visual studio 2013\Projects\Secao6\Secao6\bin\Debug\Secao6.exe.config
+c:\users\brssantos\documents\visual studio 2013\Projects\Secao6\Secao6\bin\Debug\Secao6.exe
+c:\users\brssantos\documents\visual studio 2013\Projects\Secao6\Secao6\bin\Debug\Secao6.pdb
+c:\users\brssantos\documents\visual studio 2013\Projects\Secao6\Secao6\obj\Debug\Secao6.csprojResolveAssemblyReference.cache
+c:\users\brssantos\documents\visual studio 2013\Projects\Secao6\Secao6\obj\Debug\Secao6.exe
+c:\users\brssantos\documents\visual studio 2013\Projects\Secao6\Secao6\obj\Debug\Secao6.pdb
