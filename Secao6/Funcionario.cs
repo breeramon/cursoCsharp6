@@ -11,7 +11,7 @@ namespace Secao6
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Salary { get; set; }
+        public double Salary { get; private set; }
 
         public Funcionario(int id, string name, double salary)
         {
