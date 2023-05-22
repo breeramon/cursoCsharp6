@@ -11,14 +11,20 @@ namespace Secao6
     {
         static void Main(string[] args)
         {
-            Console.Write("Preço do produto: ");
-            double preco = double.Parse(Console.ReadLine());
-            double desconto = (preco < 20) ? preco * 0.1 : preco * 0.05;
+            DateTime d1 = DateTime.Parse("2000-08-15");
+            DateTime d2 = DateTime.Parse("2003/12/17 22:08:43");
+            DateTime d3 = DateTime.ParseExact("2023-07-22", "yyyy-MM-dd", CultureInfo.InvariantCulture);
 
-            Console.WriteLine(preco);
-            Console.WriteLine("desconto = {0}, preço com o desconto aplicado no produto {1}", desconto, preco - desconto);
+            DateTime d4 = DateTime.Now;
+            DateTime d5 = DateTime.Today;
+            DateTime d6 = DateTime.UtcNow;
 
-            //Console.ReadKey();
+            Console.WriteLine(d1);
+            Console.WriteLine(d2);
+            Console.WriteLine(d3);
+            //Console.WriteLine(d4);
+            //Console.WriteLine(d5);
+            //Console.WriteLine(d6);
         }
     }
 }
