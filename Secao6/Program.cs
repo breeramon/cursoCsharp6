@@ -57,6 +57,34 @@ namespace Secao6
             DateTime y8 = d1.AddYears(2);
             DateTime y9 = d1.Subtract(t2);
             TimeSpan t = d1.Subtract(d2);
+
+            TimeSpan t7 = new TimeSpan(2, 3, 5, 7, 11);
+            Console.WriteLine(t7);
+            Console.WriteLine("Days: " + t7.Days);
+            Console.WriteLine("Hours: " + t7.Hours);
+            Console.WriteLine("Minutes: " + t7.Minutes);
+            Console.WriteLine("Milliseconds: " + t7.Milliseconds);
+            Console.WriteLine("Seconds: " + t7.Seconds);
+            Console.WriteLine("Ticks: " + t7.Ticks);
+            Console.WriteLine("TotalDays: " + t7.TotalDays);
+            Console.WriteLine("TotalHours: " + t7.TotalHours);
+            Console.WriteLine("TotalMinutes: " + t7.TotalMinutes);
+            Console.WriteLine("TotalSeconds: " + t7.TotalSeconds);
+            Console.WriteLine("TotalMilliseconds: " + t7.TotalMilliseconds);
+
+            TimeSpan t8 = new TimeSpan(1, 30, 10);
+            TimeSpan t9 = new TimeSpan(0, 10, 5);
+            TimeSpan sum = t8.Add(t2);
+            TimeSpan dif = t8.Subtract(t2);
+            //TimeSpan mult = t9.Multiply(2.0);
+            //TimeSpan div = t9.Divide(2.0);
+
+            Console.WriteLine(t8);
+            Console.WriteLine(t9);
+            Console.WriteLine(sum);
+            Console.WriteLine(dif);
+            //Console.WriteLine(mult);
+            //Console.WriteLine(div);
         }
     }
 }
