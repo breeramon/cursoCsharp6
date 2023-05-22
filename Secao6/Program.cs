@@ -11,50 +11,14 @@ namespace Secao6
     {
         static void Main(string[] args)
         {
-            Console.Write("Digite o número de Funcionários para cadastrar: ");
-            int n = int.Parse(Console.ReadLine());
+            Console.Write("Preço do produto: ");
+            double preco = double.Parse(Console.ReadLine());
+            double desconto = (preco < 20) ? preco * 0.1 : preco * 0.05;
 
-            List<Funcionario> list = new List<Funcionario>();
+            Console.WriteLine(preco);
+            Console.WriteLine("desconto = {0}, preço com o desconto aplicado no produto {1}", desconto, preco - desconto);
 
-            for (int i = 1; i <= n; i++)
-            {
-                Console.Write("Digite o Id do funcionario: ");
-                int id = int.Parse(Console.ReadLine());
-
-                Console.Write("Digite o nome do funcionario: ");
-                string name = Console.ReadLine();
-
-                Console.Write("Digite o salário do funcionário: ");
-                double salary = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
-
-                list.Add(new Funcionario(id, name, salary));
-                Console.WriteLine("");
-            }
-
-            Console.Write("Digite o Id do funcionário que vai receber o aumento: ");
-            int searchId = int.Parse(Console.ReadLine());
-
-            Funcionario emp = list.Find(x => x.Id == searchId);
-            if (emp != null)
-            {
-                Console.Write("Valor da porcentagem: ");
-                double percentage = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                emp.IncreaseSalary(percentage);
-            }
-            else
-            {
-                Console.WriteLine("Esse Id não existe!");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("Updated list of Funcionarios:");
-
-            foreach (Funcionario obj in list)
-            {
-                Console.WriteLine(obj);
-            }
-
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
